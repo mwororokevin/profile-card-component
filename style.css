@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-gray-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0% 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.card {
+    height: 100vh;
+    background-image: url('images/bg-pattern-bottom.svg'), url('images/bg-pattern-top.svg');
+    background-position: bottom -600px right -150px, top -500px left -200px;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.profile-card {    
+    border-radius: 10px;
+    background-color: white;
+}
+
+.profile-card__header img {
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card__content img {
+    border-radius: 50%;
+    border: #fff solid 4px;
+    transform: translateY(-50%);
+}
+
+.profile-card__content p {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--dark-desaturated-blue);
+    transform: translateY(-100%);
+}
+
+.profile-card__content p span {
+    font-weight: normal;
+    color: var(--dark-gray-blue);
+}
+
+.profile-card__content p:last-of-type {
+    font-size: 18px;
+    color: var(--dark-gray-blue);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.profile-card__footer {
+    border-top: solid 0.5px #d8d9df;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.profile-card__footer .footer__item {
+    text-align: center;
+}
+
+.profile-card__footer .footer__item p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-card__footer .footer__item small {
+    color: var(--dark-gray-blue);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.attribution { 
+    text-align: center; 
+    margin: 50px 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
